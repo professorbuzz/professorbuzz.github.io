@@ -14,17 +14,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 100% of the viewport height */
-            overflow: hidden; /* Prevent scrolling */
+            height: 100vh; /* Full viewport height */
+            width: 100vw;  /* Full viewport width */
+            overflow: hidden; /* Prevents scrollbars */
+            background-color: black; /* Optional: Adds black background for better contrast */
         }
         img {
-            width: 100vw;  /* 100% of the viewport width */
-            height: 100vh; /* 100% of the viewport height */
-            object-fit: cover; /* Ensures the image covers the entire area without distortion */
+            width: 100vw;  /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            object-fit: contain; /* Ensures full image is shown without cropping */
         }
     </style>
 </head>
 <body>
-    <img src="salamiundschoggi.png" alt="Full Screen Image">
+    <img src="salamiundschoggi.png" alt="Responsive Full-Screen Image">
 </body>
 </html>
